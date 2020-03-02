@@ -1,0 +1,71 @@
+@font-face {
+    font-family: stratum;
+    src: url("styles/assets/StratumBold.ttf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stack {
+    border: 1px solid black;
+    overflow: hidden;
+    height: 250px;
+    width: 300px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    z-index: 4;
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    z-index: 3;
+
+    p {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 4px 0;
+        font-family: stratum;
+        font-size: 20px;
+    }
+}
+
+.imageOne {
+    position: absolute;
+    z-index: 2;
+}
+
+.p4:nth-of-type(2) {
+    font-size: 15px;
+    letter-spacing: -0.8px;
+}
+
+button {
+    position: absolute;
+    z-index: 5;
+    right: 10px;
+    bottom: 10px;
+    color: white;
+    background: red;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: stratum;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
